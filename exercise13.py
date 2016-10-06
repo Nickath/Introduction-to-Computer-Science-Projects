@@ -32,8 +32,8 @@ if __name__ == "__main__":
             if((set(input_numbers)<set(allnumbers[day])) is True):
               print('Winner !')
               winningtimes +=1;
-              winningdates[winningtimes] = day
-              winningdraws[winningtimes] = drawnumber
+              winningdates[winningtimes] = day;
+              winningdraws[winningtimes] = drawnumber;
          drawnumber =0;
          day +=1;
     for j in range(1,winningtimes+1,1):
