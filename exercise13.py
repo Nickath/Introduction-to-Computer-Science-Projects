@@ -41,5 +41,5 @@ if __name__ == "__main__":
         print('Number of draw of the day was %s\n'%(winningdraws[j]));
      
     if(winningtimes == 0):
-       print('The numbers you chose did not win')
+       print('The numbers you chose did not win');
  
