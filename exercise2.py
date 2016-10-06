@@ -12,7 +12,7 @@ from itertools import groupby
  
 if __name__ == "__main__":
     date = time.strftime("%d-%m-%Y")
-    # date = '22-01-2015'
+    # date = '22-01-2016'
     allnumbers = [];
     maxlist = [0]*30;
     data = requests.get('http://applications.opap.gr/DrawsRestServices/kino/drawDate/%s.json'%(date)).json()['draws']
@@ -97,7 +97,7 @@ if __name__ == "__main__":
 
 #estimating the min list
     
-    minlist = [0]*30	;
+    minlist = [0]*30;
     otherlist = []
     counter = 0;
     helpcounter=0;
@@ -133,9 +133,7 @@ if __name__ == "__main__":
             min_position = numbersfrequency.index(min(numbersfrequency));
             minlist[counter] = min_position;
             
-           
-        #    numbersfrequency[min_position] = 100000;
-        #    print(min_position,min_number);
+
             if(min_number_old != min_number):
                 break;
             else:
@@ -154,7 +152,6 @@ if __name__ == "__main__":
                         newlist.pop()
                         for i  in xrange(helpcounter+1,0,-1):
                            otherlist.extend([minlist[counter - i]])
-                        #   print(otherlist)
                         newlist.append(otherlist)   
                         otherlist = []
                         counter +=1;
