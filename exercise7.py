@@ -6,4 +6,4 @@ for i in range(1,number):
            print("Yes, number {} is number {} in the exponent of 2 ".format(number,i))
            itis = True;
 if(itis is None):
-    print('Your number is not the exponent of 2 of any number')
+    print('Your number is not the exponent of 2 of any number');
