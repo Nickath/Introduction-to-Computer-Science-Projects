@@ -13,7 +13,7 @@ from itertools import groupby
 if __name__ == "__main__":
     date = time.strftime("%d-%m-%Y")
     # date = '22-01-2015'
-    allnumbers = []
+    allnumbers = [];
     maxlist = [0]*30;
     data = requests.get('http://applications.opap.gr/DrawsRestServices/kino/drawDate/%s.json'%(date)).json()['draws']
     for results in data['draw']:
