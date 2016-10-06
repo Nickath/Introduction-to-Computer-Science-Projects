@@ -13,7 +13,7 @@ while (python_dictionary_values["Response"] == "False"):
      movie =  raw_input("Choose the movie you would like:  ");
      url = "http://www.omdbapi.com/?t=%s" %movie
      response = requests.get(url)
-     python_dictionary_values = json.loads(response.text)
+     python_dictionary_values = json.loads(response.text);
 #print python_dictionary_values;
 
 
